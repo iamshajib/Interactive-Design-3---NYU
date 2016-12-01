@@ -25,6 +25,9 @@ Router.map(function() {
       path: ':profile_id'
     });
   });
+  this.route('detector');
+  this.route('doctorbd');
+  this.route('ask');
 });
 
 export default Router;

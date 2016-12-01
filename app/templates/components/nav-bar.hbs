@@ -7,13 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      {{#link-to 'index' class="navbar-brand"}}Project Name{{/link-to}}
+      {{#link-to 'index' class="navbar-brand"}}Doctor BD{{/link-to}}
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav">
-        {{#link-to 'index' tagName="li"}}<a href="">Home</a>{{/link-to}}
+        {{#link-to 'doctorbd' tagName="li"}}<a href="">Home</a>{{/link-to}}
         {{#link-to 'about' tagName="li"}}<a href="">About</a>{{/link-to}}
+        {{#link-to 'detector' tagName="li"}}<a href="">Detector</a>{{/link-to}}
+        {{#link-to 'ask' tagName="li"}}<a href="">Ask a Doctor</a>{{/link-to}}
+        {{#link-to 'index' tagName="li"}}<a href="">Timeline</a>{{/link-to}}
         {{#if session.isAuthenticated}}
           {{#link-to 'posts.new' tagName="li"}}<a href="">New Post</a>{{/link-to}}
         {{/if}}

@@ -1,0 +1,13 @@
+<h1>Put your Problems here</h1>
+<form>
+  <p>{{input value=model.problem placeholder="Problem" class="form-control"}}</p>
+  <p>{{input value=model.age placeholder="Age" class="form-control"}}</p>
+  <p>{{input value=model.gender placeholder="Gender" class="form-control"}}</p>
+  <p>{{input value=model.country placeholder="Country" class="form-control"}}</p>
+  <p>{{input value=model.email placeholder="Email Address" class="form-control"}}</p>
+  <p>{{input value=model.howlong placeholder="For how long" class="form-control"}}</p>
+  <p>{{textarea value=model.description placeholder="Write description" rows="10" class="form-control"}}</p>
+  <p>{{image-upload model=model}}</p>
+  <button {{action "save" model}} class="btn btn-primary">Save Post</button>
+  <button {{action "cancel" model}} class="btn btn-link">Cancel</button>
+</form>

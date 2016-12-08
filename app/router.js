@@ -28,6 +28,27 @@ Router.map(function() {
   this.route('detector');
   this.route('doctorbd');
   this.route('ask');
+  this.route('doctorinbox');
+
+  this.route('inquiries', function() {
+    this.route('new');
+
+    this.route('show', {
+      path: ':post_id'
+    });
+
+    this.route('edit', {
+      path: ':post_id/edit'
+    });
+  });
+
+  this.route('inquiriess', {
+    path: ':post_id'
+  }, function() {
+    this.route('show', {
+      path: ':post_id'
+    });
+  });
 });
 
 export default Router;

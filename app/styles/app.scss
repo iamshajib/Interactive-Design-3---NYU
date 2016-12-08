@@ -3,11 +3,24 @@
     clear: left;
 }@import "bootstrap";
 
+// homepage
  .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
   }
+  
+//   dtetctor page
+
+#detectorHeader{
+    background-color:lightgreen;
+    margin-bottom:10px;
+}
+  
+  footer{
+      height: 150px;
+      background-color: green;
+  }
 footer p {
-    color: red;
+    color: white;
 }

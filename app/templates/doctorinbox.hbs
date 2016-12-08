@@ -1,0 +1,23 @@
+<h1>Doctor Inbox</h1>
+
+<div class="row">
+{{#each model as |inquiry|}}
+  <div class="col-lg-3 col-sm-6 col-xs-12">
+    <div class="thumbnail">
+        {{#link-to "inquiries.show" inquiry}}
+      {{#if inquiry.imageURL}}
+          <img src="{{inquiry.imageURL}}" class="img-responsive" />
+        {{else}}
+          {{ember-cli-holderjs src_url="holder.js/100px200" class="img-responsive"}}
+        {{/if}}
+      {{/link-to}}
+      <div class="caption">
+        <h4>{{#link-to "inquiries.show" inquiry}}{{inquiry.problem}}{{/link-to}} <small>{{moment-from-now inquiry.timestamp}}</small></h4>
+        {{!--<h4>{{inquiry.age}} <small>{{inquiry.timestamp}}</small></h4>--}}
+        {{!--<h4>{{inquiry.gender}} <small>{{inquiry.timestamp}}</small></h4>--}}
+        <p>{{post.description}}</p>
+      </div>
+    </div>
+  </div>
+{{/each}}
+</div>

@@ -16,7 +16,9 @@
         {{#link-to 'detector' tagName="li"}}<a href="">Detector</a>{{/link-to}}
         {{#link-to 'ask' tagName="li"}}<a href="">Ask a Doctor</a>{{/link-to}}
         {{#link-to 'index' tagName="li"}}<a href="">Timeline</a>{{/link-to}}
+        {{#link-to 'doctorinbox' tagName="li"}}<a href="">Doctor Inbox</a>{{/link-to}}
         {{#if session.isAuthenticated}}
+        {{#link-to 'inquiries.new' tagName="li"}}<a href="">Ask</a>{{/link-to}}
           {{#link-to 'posts.new' tagName="li"}}<a href="">New Post</a>{{/link-to}}
         {{/if}}
       </ul>
